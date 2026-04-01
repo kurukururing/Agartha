@@ -7,7 +7,7 @@
     android:padding="16dp">
 
     <TextView
-        android:text="@string/judul_share"
+        android:text="@string/share_title"
         android:textSize="24sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

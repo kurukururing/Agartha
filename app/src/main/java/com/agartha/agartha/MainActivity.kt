@@ -1,6 +1,7 @@
 package com.agartha.agartha
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +16,17 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val fragmentWelcome = welcome()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.main, fragmentWelcome)
+            .commit()
+        val btnMulai = findViewById<Button>(R.id.button)
+        btnMulai.setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.main, welcome())
+                .addToBackStack(null) // Tambahkan ini agar saat klik tombol back tidak langsung keluar aplikasi
+                .commit()
         }
     }
 }

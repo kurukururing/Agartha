@@ -12,7 +12,7 @@
         android:id="@+id/txt_hello"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Halo, Gregorius Frederick Jefferson!"
+        android:text="@string/halo_user"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,7 +24,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Selamat di aplikasi CatatLari"
+        android:text="@string/selamat_datang"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/txt_hello"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:src="@android:drawable/ic_input_add"
+        android:contentDescription="@string/tambah_data"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

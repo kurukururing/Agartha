@@ -4,7 +4,7 @@
     <string name="catat_lari">Catat Lari</string>
 
 
-    <string name="share_title">Let\'s Share Your Journey</string>
+    <string name="judul_share">Let\'s Share Your Journey</string>
 
     <string name="tanggal">Tanggal</string>
     <string name="masukkan_tanggal">Masukkan tanggal</string>
@@ -19,4 +19,7 @@
     <string name="bagikan">Bagikan ke Media Sosial</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="halo_user">Halo, Gregorius Frederick Jefferson!</string>
+    <string name="selamat_datang">Selamat di aplikasi CatatLari</string>
+    <string name="tambah_data">Tambah Data</string>
 </resources>

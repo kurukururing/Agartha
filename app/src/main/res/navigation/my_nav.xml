@@ -17,12 +17,7 @@
             android:id="@+id/action_welcome2_to_register3"
             app:destination="@id/register3" />
     </fragment>
-    <action
-        android:id="@+id/action_welcome2_to_login3"
-        app:destination="@id/login3" />
-    <action
-        android:id="@+id/action_welcome2_to_register3"
-        app:destination="@id/register3" />
+
     <fragment
         android:id="@+id/beranda"
         android:name="com.agartha.agartha.beranda"
@@ -35,14 +30,13 @@
             android:id="@+id/action_beranda_to_catatlari"
             app:destination="@id/catatlari" />
     </fragment>
-    <action
-        android:id="@+id/action_beranda_to_fragment_profil"
-        app:destination="@id/fragment_profil" />
+
     <fragment
         android:id="@+id/fragment_profil"
         android:name="com.agartha.agartha.fragment_profil"
         android:label="fragment_profil"
         tools:layout="@layout/fragment_profil" />
+
     <fragment
         android:id="@+id/login3"
         android:name="com.agartha.agartha.login"
@@ -52,21 +46,17 @@
             android:id="@+id/action_login3_to_beranda"
             app:destination="@id/beranda" />
     </fragment>
-    <action
-        android:id="@+id/action_login3_to_beranda"
-        app:destination="@id/beranda" />
+
     <fragment
         android:id="@+id/register3"
-        android:name="com.agartha.agartha.register"
+        android:name="com.agartha.agartha.Register"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register">
         <action
             android:id="@+id/action_register3_to_welcome2"
             app:destination="@id/welcome2" />
     </fragment>
-    <action
-        android:id="@+id/action_register3_to_welcome2"
-        app:destination="@id/welcome2" />
+
     <fragment
         android:id="@+id/mainPage3"
         android:name="com.agartha.agartha.mainPage"
@@ -76,8 +66,10 @@
             android:id="@+id/action_mainPage3_to_welcome2"
             app:destination="@id/welcome2" />
     </fragment>
+
     <fragment
         android:id="@+id/catatlari"
-        android:name="com.agartha.agartha.Catatlari"
-        android:label="Catatlari" />
+        android:name="com.agartha.agartha.catatlari"
+        android:label="catatlari"
+        tools:layout="@layout/fragment_catatlari" />
 </navigation>

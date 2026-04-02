@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 
 class catatlari : Fragment() {
 
@@ -18,6 +20,9 @@ class catatlari : Fragment() {
     private lateinit var btnSimpan: Button
     private lateinit var btnShare: Button
     private var catatanTerakhir: run? = null
+
+    // Use activityViewModels to share the ViewModel across fragments
+    private val sharedViewModel: SharedViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,6 +44,11 @@ class catatlari : Fragment() {
             val inputJarakStr = etJarak.text.toString()
             val inputDurasiStr = etDurasi.text.toString()
 
+            if (inputTanggal.isEmpty() || inputJarakStr.isEmpty() || inputDurasiStr.isEmpty()) {
+                Toast.makeText(requireContext(), "Harap isi semua data!", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             // 2. Ubah tipe data biar sesuai dengan Data Class
             val jarakLari = inputJarakStr.toDoubleOrNull() ?: 0.0
             val durasiLari = inputDurasiStr.toIntOrNull() ?: 0
@@ -51,13 +61,13 @@ class catatlari : Fragment() {
             )
             catatanTerakhir = dataLariBaru
 
+            // 4. Update SharedViewModel
+            sharedViewModel.addRun(dataLariBaru)
+
             Toast.makeText(requireContext(), "Catatan disimpan", Toast.LENGTH_SHORT).show()
 
-
-            // --- clear form ---
-            etTanggal.text.clear()
-            etJarak.text.clear()
-            etDurasi.text.clear()
+            // 5. Navigate back to Beranda
+            findNavController().popBackStack()
         }
 
         btnShare.setOnClickListener {
@@ -65,7 +75,7 @@ class catatlari : Fragment() {
             if (catatanTerakhir != null) {
 
                 // Ambil data dari variabel catatanTerakhir
-                val shareText = getString(R.string.share_title) + """
+                val shareText = getString(R.string.judul_share) + """
                 
                 Tanggal: ${catatanTerakhir?.tanggal}
                 Jarak: ${catatanTerakhir?.jarak} km

@@ -32,8 +32,8 @@
             android:id="@+id/action_beranda_to_fragment_profil"
             app:destination="@id/fragment_profil" />
         <action
-            android:id="@+id/action_beranda_to_catatlari"
-            app:destination="@id/catatlari" />
+            android:id="@+id/action_beranda_to_catatlari3"
+            app:destination="@id/catatlari3" />
     </fragment>
     <action
         android:id="@+id/action_beranda_to_fragment_profil"
@@ -77,7 +77,8 @@
             app:destination="@id/welcome2" />
     </fragment>
     <fragment
-        android:id="@+id/catatlari"
-        android:name="com.agartha.agartha.Catatlari"
-        android:label="Catatlari" />
+        android:id="@+id/catatlari3"
+        android:name="com.agartha.agartha.catatlari"
+        android:label="fragment_catatlari"
+        tools:layout="@layout/fragment_catatlari" />
 </navigation>

@@ -10,7 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
-class BlankFragment : Fragment() {
+class catatlari : Fragment() {
 
     private lateinit var etTanggal: EditText
     private lateinit var etJarak: EditText

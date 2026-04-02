@@ -9,23 +9,23 @@ import android.widget.Button
 import androidx.navigation.Navigation
 
 
-class login : Fragment() {
+class mainPage : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_login, container, false)
+       val view = inflater.inflate(R.layout.fragment_main_page, container, false)
 
-        val fragment_next = view.findViewById<Button>(R.id.login_button)
+        val fragment_next = view.findViewById<Button>(R.id.button)
 
         fragment_next.setOnClickListener {
-            Navigation.findNavController(view).navigate (R.id.action_login3_to_beranda)
+            Navigation.findNavController(view).navigate (R.id.action_mainPage3_to_welcome2)
         }
 
         return view
-    }
 
+    }
 
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <string name="nm_perusahaan">Perusahaan</string>
+    <string name="deskripsi">deskripsi</string>
+
+    <string-array name="data_name">
+        <item>perusahaan a</item>
+        <item>perusahaan b</item>
+        <item>perusahaan c</item>
+        <item>perusahaan d</item>
+        <item>perusahaan e</item>
+        <item>perusahaan f</item>
+        <item>perusahaan g</item>
+    </string-array>
+
+    <string-array name="data_deskripsi">
+        <item>deskripsi a</item>
+        <item>deskripsi b</item>
+        <item>deskripsi c</item>
+        <item>deskripsi d</item>
+        <item>deskripsi e</item>
+        <item>deskripsi f</item>
+        <item>deskripsi g</item>
+    </string-array>
+
+    <integer-array name="data_foto">
+        <item>@drawable/moerschy_skyscraper_418189_1920</item>
+        <item>@drawable/modern_business_buildings</item>
+        <item>@drawable/publicdomainpictures_architecture_22039_1920</item>
+        <item>@drawable/sangeeth_n_tallest_3093955_1920</item>
+        <item>@drawable/sean_pollock_phyq704ffda_unsplash</item>
+        <item>@drawable/skyscrapers_from_low_angle_view</item>
+        <item>@drawable/view_geometric_buildings</item>
+    </integer-array>
+
+</resources>

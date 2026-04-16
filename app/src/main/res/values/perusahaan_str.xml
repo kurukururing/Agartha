@@ -2,7 +2,7 @@
 
 
 <resources>
-    <string name="nm_perusahaan">Perusahaan</string>
+    <string name="nm_perusahaan">nm_perusahaan</string>
     <string name="deskripsi">deskripsi</string>
 
     <string-array name="data_name">

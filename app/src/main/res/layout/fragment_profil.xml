@@ -12,17 +12,17 @@
         android:id="@+id/profileHeader"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@color/primary"
+        android:background="#4CAF50"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvProfileTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="58dp"
         android:text="Profile"
         android:textColor="@color/white"
-        android:textSize="28sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Gregorius Frederick"
+                android:text="Evan Putra"
                 android:textColor="@color/text_primary"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -69,7 +69,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Runner Enthusiast"
+                android:text="Nice Guy"
                 android:textColor="@color/text_secondary"
                 android:textSize="14sp" />
 
